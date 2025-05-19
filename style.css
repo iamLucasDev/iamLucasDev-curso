@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: rgba(181, 190, 199, 0.37);
+}
+.hero{
+   background-color: white;
+}
+.logo{
+    color: rgb(77, 127, 192);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hero_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_menu li{
+    list-style-type: none; 
+     margin: 10px;
+     display: inline;
+}
+.btn-menu{
+    text-decoration: none;
+   font-size: 1.5em;
+   border: 2px solid blue;
+   border-radius: 5px;
+   display: block;
+   text-align: center;
+   padding: .2em;
+   color: blue;
+}
+.btn-menu:hover{
+    background-color: rgb(97, 97, 216);
+    color: white;
+    border: none;
+}
+h2{
+    color: rgb(98, 98, 114);
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+.destaque{
+    color: rgb(21, 21, 179);
+    text-transform: uppercase;
+}
+
+.main_content{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 10px;
+}
+.content{
+    padding: 2em;
+    margin:10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content h3{
+    color: blue;
+    text-shadow: 1px 1px 1px;
+    margin-bottom: 10px;
+}
+.content li{
+    line-height: 1.7;
+    font-size: 1.2em;
+}
+
+.content li::marker{
+    color: blue;
+}
+
+.btn-content{
+ background-color: blue;
+ color: white;
+ text-decoration: none;
+ padding: .75em;
+ display: block;
+ text-align: center;
+ text-transform: uppercase;
+
+}
+.btn-content:hover{
+    background-color: white;
+    border:2px solid blue;
+    color: blue;
+   
+}
+
+footer{
+    background-color: white;
+    padding: .75em;
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     margin: 0 10px;
+     gap: 20px;
+}
+.links_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.links_footer a{
+  text-decoration: none; 
+}
+.link-ativo{
+    color: blue;
+}
+.desativado{
+    text-decoration: none; 
+    color: gray;
+}
+
+@media screen and (min-width:40em) {
+    
+    .hero{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        padding: 2em;
+    }
+    .btn-menu{
+        display: inline;
+    }
+    h2{
+        font-size: 2em;
+    }
+  
+    footer p{
+        text-align: center;
+    }
+   .links_footer{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+}
+
+@media screen and (min-width:62.5em) {
+      .main_content{
+        grid-template-columns: repeat(3,1fr);
+        width: 70%;
+        margin: auto;
+    }
+      footer{      
+        bottom: 0; 
+        left:0; 
+        width: 100%;  
+        margin: auto; 
+       position: fixed;
+    }
+}
+    
+ 
